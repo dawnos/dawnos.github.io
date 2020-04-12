@@ -1,0 +1,12 @@
+
+Li Tang:
+  # name        : "Li Tang"
+  bio         : "A Roboticsist"
+  avatar      : "/assets/images/bio-photo.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:litang.cv@gmail.com"
+    - label: "Github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/dawnos"

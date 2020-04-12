@@ -1,0 +1,15 @@
+
+# MastheadPermalink
+main:
+  - title: "Academic"
+    url: /academic/
+  - title: "Life"
+    url: /life/
+
+academic:
+  - title: CV
+    children:
+      - title: "About Me"
+        url: /academic/
+      - title: "Involved Projects"
+        url: /academic/projects/
