@@ -11,6 +11,7 @@ permalink: /academic/
 
 {{"
 I am a PhD candidate at ZJU Robotics Lab (ZJURL), Zhejiang University since 2015.
+I visited UTS Centre for Autonomous Systems (CAS) from Oct. 2017 to Jan. 2018, and I am now a visitor in Autonomous Systems Lab (ASL), ETH Zurich (since Sept. 2019).
 
 My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
 "  | markdownify }}
@@ -29,20 +30,3 @@ My research interest is focused on visual localization. Besides, I am interested
 {% assign projects = site.projects | where: "tags", "academic" %}
 {% include project-list.html entries=projects sort_by="date" sort_order="reverse" %}
 </div>
-
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
