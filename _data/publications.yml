@@ -1,23 +1,108 @@
 - list:
+  - bib: '@article{ma2020deepgoal,<br/>    author = "Ma, Huifang and Wang, Yue and
+      Xiong, Rong and Kodagoda, Sarath and Tang, Li",<br/>    title = "DeepGoal: Learning
+      to drive with driving intention from human control demonstration",<br/>    journal
+      = "Robotics and Autonomous Systems",<br/>    pages = "103477",<br/>    year
+      = "2020",<br/>    publisher = "Elsevier"<br/>}'
+    citekey: ma2020deepgoal
+    code: ''
+    pdf: ma2020deepgoal.pdf
+    ref: 'Huifang Ma, Yue Wang, Rong Xiong, Sarath Kodagoda, and Li&nbsp;Tang.
+
+      Deepgoal: learning to drive with driving intention from human control demonstration.
+
+      <em>Robotics and Autonomous Systems</em>, pages 103477, 2020.'
+    selected: true
+  - bib: '@article{fu2019lidar,<br/>    author = "Fu, Bo and Wang, Yue and Ding, Xiaqing
+      and Jiao, Yanmei and Tang, Li and Xiong, Rong",<br/>    title = "LiDAR--Camera
+      Calibration under Arbitrary Configurations: Observability and Methods",<br/>    journal
+      = "IEEE Transactions on Instrumentation and Measurement",<br/>    volume = "69",<br/>    number
+      = "6",<br/>    pages = "3089-3102",<br/>    year = "2019",<br/>    publisher
+      = "IEEE"<br/>}'
+    citekey: fu2019lidar
+    code: ''
+    pdf: fu2019lidar.pdf
+    ref: "Bo&nbsp;Fu, Yue Wang, Xiaqing Ding, Yanmei Jiao, Li&nbsp;Tang, and Rong\
+      \ Xiong.\nLidar\u2013camera calibration under arbitrary configurations: observability\
+      \ and methods.\n<em>IEEE Transactions on Instrumentation and Measurement</em>,\
+      \ 69(6):3089&ndash;3102, 2019."
+    selected: true
   - bib: '@article{tang2019topological,<br/>    author = "Tang, Li and Wang, Yue and
       Ding, Xiaqing and Yin, Huan and Xiong, Rong and Huang, Shoudong",<br/>    title
       = "Topological local-metric framework for mobile robots navigation: a long term
       perspective",<br/>    journal = "Autonomous Robots",<br/>    volume = "43",<br/>    number
       = "1",<br/>    pages = "197--211",<br/>    year = "2019",<br/>    publisher
-      = "Springer"<br/>}'
+      = "Springer",<br/>    priority = "0"<br/>}'
     citekey: tang2019topological
     code: ''
     pdf: tang2019topological.pdf
     ref: "Li&nbsp;Tang, Yue Wang, Xiaqing Ding, Huan Yin, Rong Xiong, and Shoudong\
       \ Huang.\nTopological local-metric framework for mobile robots navigation: a\
       \ long term perspective.\n<em>Autonomous Robots</em>, 43(1):197\u2013211, 2019."
+    selected: true
   name: Journals
 - list:
+  - bib: '@inproceedings{choi2019trajectory,<br/>    author = "Tang, Li and Wang,
+      Yue and Luo, Qianhui and Ding, Xiaqing and Xiong, Rong",<br/>    title = "Adversarial
+      Feature Disentanglement for Place Recognition Across Changing Appearance",<br/>    booktitle
+      = "2020 International Conference on Robotics and Automation (ICRA)",<br/>    pages
+      = "accepted",<br/>    year = "2020",<br/>    organization = "IEEE",<br/>    priority
+      = "0"<br/>}'
+    citekey: choi2019trajectory
+    code: ''
+    pdf: choi2019trajectory.pdf
+    ref: 'Li&nbsp;Tang, Yue Wang, Qianhui Luo, Xiaqing Ding, and Rong Xiong.
+
+      Adversarial feature disentanglement for place recognition across changing appearance.
+
+      In <em>2020 International Conference on Robotics and Automation (ICRA)</em>,
+      accepted. IEEE, 2020.'
+    selected: true
+  - bib: '@inproceedings{ding2018laser,<br/>    author = "Ding, Xiaqing and Wang,
+      Yue and Li, Dongxuan and Tang, Li and Yin, Huan and Xiong, Rong",<br/>    title
+      = "Laser map aided visual inertial localization in changing environment",<br/>    booktitle
+      = "2018 IEEE/RSJ International Conference on Intelligent Robots and Systems
+      (IROS)",<br/>    pages = "4794--4801",<br/>    year = "2018",<br/>    organization
+      = "IEEE",<br/>    priority = "1"<br/>}'
+    citekey: ding2018laser
+    code: ''
+    pdf: ding2018laser.pdf
+    ref: "Xiaqing Ding, Yue Wang, Dongxuan Li, Li&nbsp;Tang, Huan Yin, and Rong Xiong.\n\
+      Laser map aided visual inertial localization in changing environment.\nIn <em>2018\
+      \ IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>,\
+      \ 4794\u20134801. IEEE, 2018."
+    selected: true
+  - bib: '@inproceedings{ding2018multi,<br/>    author = "Ding, Xiaqing and Wang,
+      Yue and Yin, Huan and Tang, Li and Xiong, Rong",<br/>    title = "Multi-session
+      Map Construction in Outdoor Dynamic Environment",<br/>    booktitle = "2018
+      IEEE International Conference on Real-time Computing and Robotics (RCAR)",<br/>    pages
+      = "384--389",<br/>    year = "2018",<br/>    organization = "IEEE"<br/>}'
+    citekey: ding2018multi
+    code: ''
+    pdf: ding2018multi.pdf
+    ref: "Xiaqing Ding, Yue Wang, Huan Yin, Li&nbsp;Tang, and Rong Xiong.\nMulti-session\
+      \ map construction in outdoor dynamic environment.\nIn <em>2018 IEEE International\
+      \ Conference on Real-time Computing and Robotics (RCAR)</em>, 384\u2013389.\
+      \ IEEE, 2018."
+    selected: false
+  - bib: '@inproceedings{yin2018locnet,<br/>    author = "Yin, Huan and Tang, Li and
+      Ding, Xiaqing and Wang, Yue and Xiong, Rong",<br/>    title = "LocNet: Global
+      localization in 3D point clouds for mobile vehicles",<br/>    booktitle = "2018
+      IEEE Intelligent Vehicles Symposium (IV)",<br/>    pages = "728--733",<br/>    year
+      = "2018",<br/>    organization = "IEEE"<br/>}'
+    citekey: yin2018locnet
+    code: ''
+    pdf: yin2018locnet.pdf
+    ref: "Huan Yin, Li&nbsp;Tang, Xiaqing Ding, Yue Wang, and Rong Xiong.\nLocnet:\
+      \ global localization in 3d point clouds for mobile vehicles.\nIn <em>2018 IEEE\
+      \ Intelligent Vehicles Symposium (IV)</em>, 728\u2013733. IEEE, 2018."
+    selected: false
   - bib: '@inproceedings{tang2017one,<br/>    author = "Tang, Li and Ding, Xiaqing
       and Yin, Huan and Wang, Yue and Xiong, Rong",<br/>    title = "From one to many:
       Unsupervised traversable area segmentation in off-road environment",<br/>    booktitle
       = "2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)",<br/>    pages
-      = "787--792",<br/>    year = "2017",<br/>    organization = "IEEE"<br/>}'
+      = "787--792",<br/>    year = "2017",<br/>    organization = "IEEE",<br/>    priority
+      = "0"<br/>}'
     citekey: tang2017one
     code: ''
     pdf: tang2017one.pdf
@@ -25,4 +110,17 @@
       \ to many: unsupervised traversable area segmentation in off-road environment.\n\
       In <em>2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>,\
       \ 787\u2013792. IEEE, 2017."
+    selected: true
+  - bib: '@inproceedings{yin2017efficient,<br/>    author = "Yin, Huan and Ding, Xiaqing
+      and Tang, Li and Wang, Yue and Xiong, Rong",<br/>    title = "Efficient 3D LIDAR
+      based loop closing using deep neural network",<br/>    booktitle = "2017 IEEE
+      International Conference on Robotics and Biomimetics (ROBIO)",<br/>    pages
+      = "481--486",<br/>    year = "2017",<br/>    organization = "IEEE"<br/>}'
+    citekey: yin2017efficient
+    code: ''
+    pdf: yin2017efficient.pdf
+    ref: "Huan Yin, Xiaqing Ding, Li&nbsp;Tang, Yue Wang, and Rong Xiong.\nEfficient\
+      \ 3d lidar based loop closing using deep neural network.\nIn <em>2017 IEEE International\
+      \ Conference on Robotics and Biomimetics (ROBIO)</em>, 481\u2013486. IEEE, 2017."
+    selected: false
   name: Conferences

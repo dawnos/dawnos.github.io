@@ -21,7 +21,19 @@ My research interest is focused on visual localization. Besides, I am interested
 {% for pubs in site.data.publications %}
     {{ "### " | append: pubs.name | append: ":" | markdownify }}
     <ul>
-    {% for pub in pubs.list %}
+    {% comment %} {% assign selected_pubs = pubs.list | sort: "priority" | limit: 3 | sort: "index" %} {% endcomment %}
+    {% assign selected_pubs = pubs.list | where: "selected", true %}
+    {% comment %}
+    {% assign prioritized_pubs = pubs.list | sort: "priority" %}
+    {% assign less_prioritized_pubs = '' | split: '' %}
+    {{ less_prioritized_pubs | inspect }}
+    {% for pub in prioritized_pubs limit: 3 %}
+     {% assign pub_ = pub | split: '' %}
+     {% assign less_prioritized_pubs = less_prioritized_pubs | concat: pub_ %}
+    {% endfor%}
+    {% assign selected_pubs = less_prioritized_pubs | sort: "index" %}
+    {% endcomment %}
+    {% for pub in selected_pubs %}
         <li>
             {{ pub.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
             {% if pub.pdf != '' %}
@@ -37,6 +49,8 @@ My research interest is focused on visual localization. Besides, I am interested
     </ul>
 
 {% endfor %}
+
+{{ "(More)" | markdownify }}
 
 <hr>
 
