@@ -1,0 +1,62 @@
+---
+layout: single
+sidebar:
+  nav: "academic"
+author_profile: true
+author: Li Tang
+permalink: /academic/
+---
+
+<h2>About Me</h2>
+
+<p>
+I am a PhD candidate at ZJU Robotics Lab (ZJURL), Zhejiang University since 2015.
+My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
+</p>
+
+<h2>Selected Publications</h2>
+{% for item in site.data.publications %}
+    <h3>{{ item.name }}:</h3>
+    <ul>
+    {% for j in item.list %}
+        <li>
+            {{ j.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
+            {% if j.pdf != '' %}
+            <a href="{{site.url}}/assets/pdfs/{{ j.pdf }}">[pdf]</a>
+            {% endif %}
+            {% if j.code != '' %}
+            <a href={{ j.code }}>[code]</a>
+            {% endif %}
+            <a href="javascript:void(0)" class="collapsible">[bib]</a>
+            <div class="bib-collapse"><p style="font-size:100%;">{{ j.bib }}</p></div>
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endfor %}
+
+<h2>Projects</h2>
+{% comment %} <div class="entries-academic-project"> {% endcomment %}
+  {% comment %} {% include documents-collection.html collection="project" sort_by=page.sort_by sort_order=page.sort_order type=grid %} {% endcomment %}
+{% comment %} </div> {% endcomment %}
+{% comment %} {{ site["project"] }} {% endcomment %}
+<div class="entries-academic-project"> 
+{% assign projects = site.posts | where: "categories", "project" | where: "tags", "academic" %}
+{% include project-list.html entries=projects sort_by="date" sort_order="reverse" %}
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>

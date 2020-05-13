@@ -5,4 +5,8 @@ sidebar:
     nav: "life"
 ---
 
-Coming soon.
+# Intro
+Comming soon.
+
+# Title 2
+Comming soon.

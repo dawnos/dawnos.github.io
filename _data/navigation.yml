@@ -3,8 +3,8 @@
 main:
   - title: "Academic"
     url: /academic/
-  - title: "Life"
-    url: /life/
+  # - title: "Life"
+    # url: /life/
 
 academic:
   - title: CV
@@ -12,4 +12,4 @@ academic:
       - title: "About Me"
         url: /academic/
       - title: "Involved Projects"
-        url: /academic/projects/
+        url: /academic#projects

@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+# gem "jekyll", "= 3.8.5"
 gem "jekyll", "~> 4.0.0"
 
 gem "minimal-mistakes-jekyll"
@@ -7,9 +8,9 @@ gem "minimal-mistakes-jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed", "~> 0.13"
   gem "jekyll-include-cache"
-  gem "jemoji"
+  gem "jemoji", "~> 0.11.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

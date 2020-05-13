@@ -1,0 +1,28 @@
+- list:
+  - bib: '@article{tang2019topological,<br/>    author = "Tang, Li and Wang, Yue and
+      Ding, Xiaqing and Yin, Huan and Xiong, Rong and Huang, Shoudong",<br/>    title
+      = "Topological local-metric framework for mobile robots navigation: a long term
+      perspective",<br/>    journal = "Autonomous Robots",<br/>    volume = "43",<br/>    number
+      = "1",<br/>    pages = "197--211",<br/>    year = "2019",<br/>    publisher
+      = "Springer"<br/>}'
+    citekey: tang2019topological
+    code: ''
+    pdf: tang2019topological.pdf
+    ref: "Li&nbsp;Tang, Yue Wang, Xiaqing Ding, Huan Yin, Rong Xiong, and Shoudong\
+      \ Huang.\nTopological local-metric framework for mobile robots navigation: a\
+      \ long term perspective.\n<em>Autonomous Robots</em>, 43(1):197\u2013211, 2019."
+  name: Journals
+- list:
+  - bib: '@inproceedings{tang2017one,<br/>    author = "Tang, Li and Ding, Xiaqing
+      and Yin, Huan and Wang, Yue and Xiong, Rong",<br/>    title = "From one to many:
+      Unsupervised traversable area segmentation in off-road environment",<br/>    booktitle
+      = "2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)",<br/>    pages
+      = "787--792",<br/>    year = "2017",<br/>    organization = "IEEE"<br/>}'
+    citekey: tang2017one
+    code: ''
+    pdf: tang2017one.pdf
+    ref: "Li&nbsp;Tang, Xiaqing Ding, Huan Yin, Yue Wang, and Rong Xiong.\nFrom one\
+      \ to many: unsupervised traversable area segmentation in off-road environment.\n\
+      In <em>2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>,\
+      \ 787\u2013792. IEEE, 2017."
+  name: Conferences

@@ -6,7 +6,8 @@
         {
             "label": "Run server",
             "type": "shell",
-            "command": "bundle exec jekyll serve",
+            "command": "bundle exec jekyll serve --watch",
+            // "command": "bundle exec jekyll build --watch",
             "problemMatcher": []
         }
     ]
