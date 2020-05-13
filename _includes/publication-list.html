@@ -1,0 +1,26 @@
+{% assign show_less = include.show_less %}
+{% for pubs in site.data.publications %}
+    {{ "### " | append: pubs.name | append: ":" | markdownify }}
+    {% comment %} {% assign selected_pubs = pubs.list | sort: "priority" | limit: 3 | sort: "index" %} {% endcomment %}
+    {% if show_less %}
+        {% assign selected_pubs = pubs.list | where: "selected", true %}
+    {% else %}
+        {% assign selected_pubs = pubs.list %}
+    {% endif %}
+    <ul>
+    {% for pub in selected_pubs %}
+        <li>
+            {{ pub.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
+            {% if pub.pdf != '' %}
+            <a href="{{site.url}}/assets/pdfs/{{ pub.pdf }}">[pdf]</a>
+            {% endif %}
+            {% if pub.code != '' %}
+            <a href={{ pub.code }}>[code]</a>
+            {% endif %}
+            <a href="javascript:void(0)" class="collapsible">[bib]</a>
+            <div class="bib-collapse"><p style="font-size:100%;">{{ pub.bib }}</p></div>
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endfor %}

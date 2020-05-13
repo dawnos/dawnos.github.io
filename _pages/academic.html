@@ -18,39 +18,8 @@ My research interest is focused on visual localization. Besides, I am interested
 <hr>
 
 {{ "# Publications" | markdownify }}
-{% for pubs in site.data.publications %}
-    {{ "### " | append: pubs.name | append: ":" | markdownify }}
-    <ul>
-    {% comment %} {% assign selected_pubs = pubs.list | sort: "priority" | limit: 3 | sort: "index" %} {% endcomment %}
-    {% assign selected_pubs = pubs.list | where: "selected", true %}
-    {% comment %}
-    {% assign prioritized_pubs = pubs.list | sort: "priority" %}
-    {% assign less_prioritized_pubs = '' | split: '' %}
-    {{ less_prioritized_pubs | inspect }}
-    {% for pub in prioritized_pubs limit: 3 %}
-     {% assign pub_ = pub | split: '' %}
-     {% assign less_prioritized_pubs = less_prioritized_pubs | concat: pub_ %}
-    {% endfor%}
-    {% assign selected_pubs = less_prioritized_pubs | sort: "index" %}
-    {% endcomment %}
-    {% for pub in selected_pubs %}
-        <li>
-            {{ pub.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
-            {% if pub.pdf != '' %}
-            <a href="{{site.url}}/assets/pdfs/{{ pub.pdf }}">[pdf]</a>
-            {% endif %}
-            {% if pub.code != '' %}
-            <a href={{ pub.code }}>[code]</a>
-            {% endif %}
-            <a href="javascript:void(0)" class="collapsible">[bib]</a>
-            <div class="bib-collapse"><p style="font-size:100%;">{{ pub.bib }}</p></div>
-        </li>
-    {% endfor %}
-    </ul>
-
-{% endfor %}
-
-{{ "(More)" | markdownify }}
+{% include publication-list.html show_less=true %}
+{{ "[**Find More Here...**](/publications/)" | markdownify }}
 
 <hr>
 

@@ -11,5 +11,7 @@ academic:
     children:
       - title: "About Me"
         url: /academic/
+      - title: "Publications"
+        url: /publications/
       - title: "Involved Projects"
         url: /academic#projects
