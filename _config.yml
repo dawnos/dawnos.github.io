@@ -22,8 +22,8 @@ title: Li Tang's Site
 email: litang.cv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is Li Tang's site.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "tangli.site" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "tangli.site"
 twitter_username: ""
 github_username:  dawnos
 
@@ -62,34 +62,31 @@ include:
   - "_pages"
 
 collections:
-  project:
+  projects:
     output: true
     permalink: /:collection/:path/
 
 defaults:
+  # projects
   - scope:
       path: ""
-      type: project
+      type: projects
     values:
       layout: single
-      author_profile: false
       share: true
+      author_profile: false
   - scope:
-      path: "_project/academic"
-      type: project
+      path: "_projects/academic"
+      type: projects
     values:
-      sub_collection: academic
-
-#   # _pages
-#   - scope:
-#       path: "_pages/academic"
-#       type: pages
-#     values:
-#       layout: single
-#       sidebar:
-#         nav: "academic"
-#       author_profile: true
-#       author: Li Tang
+      layout: single
+      share: true
+      author_profile: false
+      tags: academic
+      # sidebar:
+        # nav: "academic"
+      # author_profile: true
+      # author: Li Tang
 
 
 search: true

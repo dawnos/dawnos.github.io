@@ -7,43 +7,46 @@ author: Li Tang
 permalink: /academic/
 ---
 
-<h2>About Me</h2>
+{{ "# About Me" | markdownify }}
 
-<p>
+{{"
 I am a PhD candidate at ZJU Robotics Lab (ZJURL), Zhejiang University since 2015.
-My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
-</p>
 
-<h2>Selected Publications</h2>
-{% for item in site.data.publications %}
-    <h3>{{ item.name }}:</h3>
+My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
+"  | markdownify }}
+
+<hr>
+
+{{ "# Publications" | markdownify }}
+{% for pubs in site.data.publications %}
+    {{ "### " | append: pubs.name | append: ":" | markdownify }}
     <ul>
-    {% for j in item.list %}
+    {% for pub in pubs.list %}
         <li>
-            {{ j.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
-            {% if j.pdf != '' %}
-            <a href="{{site.url}}/assets/pdfs/{{ j.pdf }}">[pdf]</a>
+            {{ pub.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
+            {% if pub.pdf != '' %}
+            <a href="{{site.url}}/assets/pdfs/{{ pub.pdf }}">[pdf]</a>
             {% endif %}
-            {% if j.code != '' %}
-            <a href={{ j.code }}>[code]</a>
+            {% if pub.code != '' %}
+            <a href={{ pub.code }}>[code]</a>
             {% endif %}
             <a href="javascript:void(0)" class="collapsible">[bib]</a>
-            <div class="bib-collapse"><p style="font-size:100%;">{{ j.bib }}</p></div>
+            <div class="bib-collapse"><p style="font-size:100%;">{{ pub.bib }}</p></div>
         </li>
     {% endfor %}
     </ul>
 
 {% endfor %}
 
-<h2>Projects</h2>
-{% comment %} <div class="entries-academic-project"> {% endcomment %}
-  {% comment %} {% include documents-collection.html collection="project" sort_by=page.sort_by sort_order=page.sort_order type=grid %} {% endcomment %}
-{% comment %} </div> {% endcomment %}
-{% comment %} {{ site["project"] }} {% endcomment %}
+<hr>
+
+{{ "# Projects" | markdownify }}
+
 <div class="entries-academic-project"> 
-{% assign projects = site.posts | where: "categories", "project" | where: "tags", "academic" %}
+{% assign projects = site.projects | where: "tags", "academic" %}
 {% include project-list.html entries=projects sort_by="date" sort_order="reverse" %}
 </div>
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
