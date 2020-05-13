@@ -36,15 +36,10 @@ def to_yaml(filename, n_select=3):
         entry = bibs.entries[citekey]
         item['ref'] = style.format_entry(0, entry).text.render(backend)
         item['citekey'] = citekey
-        item['code'] = ''
+        item['code'] = entry.fields['code'] if 'code' in entry.fields else ''
         item['pdf'] = '%s.pdf' % citekey
         item['bib'] = entry2bibtex(citekey, entry)
         item['selected'] = True if is_selected[idx] else False
-        # if 'priority' in entry.fields:
-        #     item['priority'] = entry.fields['priority']
-        # else:
-        #     item['priority'] = 99
-        # item['index'] = idx
 
         items.append(item)
 

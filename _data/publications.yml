@@ -46,10 +46,10 @@
       Yue and Luo, Qianhui and Ding, Xiaqing and Xiong, Rong",<br/>    title = "Adversarial
       Feature Disentanglement for Place Recognition Across Changing Appearance",<br/>    booktitle
       = "2020 International Conference on Robotics and Automation (ICRA)",<br/>    pages
-      = "accepted",<br/>    year = "2020",<br/>    organization = "IEEE",<br/>    priority
-      = "0"<br/>}'
+      = "accepted",<br/>    year = "2020",<br/>    organization = "IEEE",<br/>    code
+      = "https://github.com/dawnos/fdn-pr",<br/>    priority = "0"<br/>}'
     citekey: choi2019trajectory
-    code: ''
+    code: https://github.com/dawnos/fdn-pr
     pdf: choi2019trajectory.pdf
     ref: 'Li&nbsp;Tang, Yue Wang, Qianhui Luo, Xiaqing Ding, and Rong Xiong.
 
