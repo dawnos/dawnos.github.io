@@ -12,7 +12,7 @@
         <li>
             {{ pub.ref | replace: "Li&nbsp;Tang", "<b>Li&nbsp;Tang</b>" | replace: "Li Tang", "<b>Li Tang</b>" }}
             {% if pub.pdf != '' %}
-            <a href="{{site.url}}/assets/pdfs/{{ pub.pdf }}">[pdf]</a>
+            <a href="/assets/pdfs/{{ pub.pdf }}">[pdf]</a>
             {% endif %}
             {% if pub.code != '' %}
             <a href={{ pub.code }}>[code]</a>
