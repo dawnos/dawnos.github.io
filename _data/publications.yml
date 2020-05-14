@@ -42,15 +42,15 @@
     selected: true
   name: Journals
 - list:
-  - bib: '@inproceedings{choi2019trajectory,<br/>    author = "Tang, Li and Wang,
+  - bib: '@inproceedings{tang2020adversarial,<br/>    author = "Tang, Li and Wang,
       Yue and Luo, Qianhui and Ding, Xiaqing and Xiong, Rong",<br/>    title = "Adversarial
       Feature Disentanglement for Place Recognition Across Changing Appearance",<br/>    booktitle
       = "2020 International Conference on Robotics and Automation (ICRA)",<br/>    pages
       = "accepted",<br/>    year = "2020",<br/>    organization = "IEEE",<br/>    code
       = "https://github.com/dawnos/fdn-pr",<br/>    priority = "0"<br/>}'
-    citekey: choi2019trajectory
+    citekey: tang2020adversarial
     code: https://github.com/dawnos/fdn-pr
-    pdf: choi2019trajectory.pdf
+    pdf: tang2020adversarial.pdf
     ref: 'Li&nbsp;Tang, Yue Wang, Qianhui Luo, Xiaqing Ding, and Rong Xiong.
 
       Adversarial feature disentanglement for place recognition across changing appearance.
