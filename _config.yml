@@ -67,26 +67,16 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
-  # projects
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: single
-      share: true
-      author_profile: false
+  # Academic projects
   - scope:
       path: "_projects/academic"
       type: projects
     values:
-      layout: single
-      share: true
-      author_profile: false
       tags: academic
-      # sidebar:
-        # nav: "academic"
-      # author_profile: true
-      # author: Li Tang
+      sidebar:
+        nav: "academic"
+      author_profile: true
+      author: Li Tang
 
 
 search: true

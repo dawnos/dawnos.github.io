@@ -3,4 +3,7 @@ layout: single
 title:  "YQ21: Dataset for Long-term Localization"
 date: 2016-06-30 21:00:00 +0800
 ---
-Project description.
+
+The purpose of this dataset is to investigate the persistent autonomy of mobile robot. Conventionally, NCLT dataset provided by the University of Michigan is the first dataset for this task. But it there is no stereo vision data in the dataset, which is important for visual navigation. Our dataset is collected on a custom robot with multiple sensors on the same route in different time. The robot is equipped with a 3D LiDAR, IMU, a short range stereo camera and a long range stereo camera on the top. An RTK-GPS is used to provide ground truth.
+
+I designed the sensory platform of the robot, along with firmware for collecting data (sensors driving, synchronization and storage). The robot was driven manually on the same route over χև։ in our campus at different time to collect data. 21 sessions of sensory data were collected in spring as training set, while 3 in autumn and 1 in winter as test set. There are some research works conducted based on this data set, such as vision-based localization[1], laser-aid visual inertial localization[3], laser mapping[4] and global localization[5][6], and traversable area segmentation[2].
