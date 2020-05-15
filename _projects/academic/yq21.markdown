@@ -5,10 +5,40 @@ date: 2016-06-30 21:00:00 +0800
 header:
   teaser: /assets/images/yq21-teaser.jpg
 ---
+
 To investigate the persistent autonomy of mobile robot, I collected a dataset with multiple sensors (3D LiDAR, IMU, a short range stereo camera and a long range stereo camera) on the same route at different time in 3 days. The dataset captures different variation of the same places, which can be used in with different research topics (e.g. SLAM, place recognition, semantic segmentation, etc.).
 
-![](/assets/images/thomas-pioneer.jpg){:width="500px" .align-center}
+![](/assets/images/yq21-teaser.jpg){:width="500px" .align-center}
 
+## Data
+
+| Session             | Google Drive | Baidu Disk                                                          |
+|                     | :----------: | :------------------------------------------------------------------:|
+| 2017/03/03 07:52:31 |              | [link](https://pan.baidu.com/s/178VwIYkR_ReV-nv2LAy74w), code: n7g9 |
+| 2017/03/03 09:20:13 |              | [link](https://pan.baidu.com/s/1xWrhXRpKw-F7H63V-Y_plQ), code: y0wy |
+| 2017/03/03 10:23:11 |              | [link](https://pan.baidu.com/s/1RmphFUTNmDYb9HR7G5O-Pg), code: ec5t |
+| 2017/03/03 11:48:03 |              | [link](https://pan.baidu.com/s/16h4Q12pPN0mkumilT-tn-A), code: snoi |
+| 2017/03/03 12:59:16 |              | [link](https://pan.baidu.com/s/1NTLg8zaQADHe5Qi9puRDtw), code: qn85 |
+| 2017/03/03 14:34:43 |              | [link](https://pan.baidu.com/s/1c6vlUxdltv7qDFDOrKBPjw), code: go64 |
+| 2017/03/03 16:05:54 |              | [link](https://pan.baidu.com/s/1u6a8z5bzq90qPXsmIucfVg), code: dn5b |
+| 2017/03/03 17:38:14 |              | [link](https://pan.baidu.com/s/1Jtyh0-buM8HoAmBikfw3eQ), code: sa8z |
+| 2017/03/07 07:43:30 |              | [link](https://pan.baidu.com/s/16BbR5zs4qsSuhtCRd9sG8w), code: psw8 |
+| 2017/03/07 09:06:04 |              | [link](https://pan.baidu.com/s/1FU0KT9Uvxy40Of-XtHt9sw), code: qmqh |
+| 2017/03/07 10:19:45 |              | [link](https://pan.baidu.com/s/1oY0bPBABs-A1rPtUO7pvLw), code: 3vx7 |
+| 2017/03/07 12:40:29 |              | [link](https://pan.baidu.com/s/1nmGgAdVUKpVybgMQQC3blA), code: nfo7 |
+| 2017/03/07 14:35:16 |              | [link](https://pan.baidu.com/s/1bnZ6Oe0KiRAP_eBNFlkVug), code: 7l5c |
+| 2017/03/07 16:28:26 |              | [link](https://pan.baidu.com/s/19k104tfU3nJqjTyKInAAxg), code: arjt |
+| 2017/03/07 17:25:06 |              | [link](https://pan.baidu.com/s/107rtbguTEkj_BNoe9waWog), code: 0s3o |
+| 2017/03/07 18:07:21 |              | [link](https://pan.baidu.com/s/1wzfeS16w4t6u_367lsP1jg), code: zfce |
+| 2017/03/09 09:06:05 |              | [link](https://pan.baidu.com/s/1LPSYihNfWZon662JrsGJmg), code: 4b61 |
+| 2017/03/09 10:03:57 |              | [link](https://pan.baidu.com/s/1DZCVrVpEKq5WzZSc9jdyvQ), code: 7gak |
+| 2017/03/09 11:25:40 |              | [link](https://pan.baidu.com/s/1xhSjaI7On8n1aeP2fUCXGA), code: k3pe |
+| 2017/03/09 15:06:14 |              | [link](https://pan.baidu.com/s/1u9DJ4og8yhW3oL6DqArNAA), code: 8ksj |
+| 2017/03/09 16:31:34 |              | [link](https://pan.baidu.com/s/1-7HT9LN6qrYIN6HfCJYkgQ), code: lmj8 |
+
+## More information
 I designed the sensory platform of the robot, along with firmware for collecting data (sensors driving, synchronization and storage). The robot was driven manually on the same route over 1km in our campus at different time to collect data. 21 sessions of sensory data were collected in spring as training set, while 3 in autumn and 1 in winter as test set. There are some research works conducted based on this data set, such as vision-based localization[1], laser-aid visual inertial localization[3], laser mapping[4] and global localization [5][6], and traversable area segmentation[2].
+
+![](/assets/images/thomas-pioneer.jpg){:width="500px" .align-center}
 
 Conventionally, NCLT dataset provided by the University of Michigan is the first dataset for this task. But it there is no stereo vision data in the dataset, which is important for visual navigation. Our dataset is collected on a custom robot with multiple sensors on the same route in different time. The robot is equipped with a  on the top. An RTK-GPS is used to provide ground truth.
