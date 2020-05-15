@@ -7,8 +7,8 @@ header:
 ---
 To investigate the persistent autonomy of mobile robot, I collected a dataset with multiple sensors (3D LiDAR, IMU, a short range stereo camera and a long range stereo camera) on the same route at different time in 3 days. The dataset captures different variation of the same places, which can be used in with different research topics (e.g. SLAM, place recognition, semantic segmentation, etc.).
 
-![smiley](/assets/images/thomas-pioneer.jpg){:width="500px" .align-center}
+![](/assets/images/thomas-pioneer.jpg){:width="500px" .align-center}
 
-I designed the sensory platform of the robot, along with firmware for collecting data (sensors driving, synchronization and storage). The robot was driven manually on the same route over χև։ in our campus at different time to collect data. 21 sessions of sensory data were collected in spring as training set, while 3 in autumn and 1 in winter as test set. There are some research works conducted based on this data set, such as vision-based localization[1], laser-aid visual inertial localization[3], laser mapping[4] and global localization [5][6], and traversable area segmentation[2].
+I designed the sensory platform of the robot, along with firmware for collecting data (sensors driving, synchronization and storage). The robot was driven manually on the same route over 1km in our campus at different time to collect data. 21 sessions of sensory data were collected in spring as training set, while 3 in autumn and 1 in winter as test set. There are some research works conducted based on this data set, such as vision-based localization[1], laser-aid visual inertial localization[3], laser mapping[4] and global localization [5][6], and traversable area segmentation[2].
 
 Conventionally, NCLT dataset provided by the University of Michigan is the first dataset for this task. But it there is no stereo vision data in the dataset, which is important for visual navigation. Our dataset is collected on a custom robot with multiple sensors on the same route in different time. The robot is equipped with a  on the top. An RTK-GPS is used to provide ground truth.
