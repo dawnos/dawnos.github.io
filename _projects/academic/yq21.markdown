@@ -12,7 +12,7 @@ To investigate the persistent autonomy of mobile robot, I collected a dataset wi
 
 ## Data
 
-| Session             | Google Drive | Baidu Disk                                                          |
+| Session             | OneDrive     | Baidu Disk                                                          |
 |                     | :----------: | :------------------------------------------------------------------:|
 | 2017/03/03 07:52:31 |              | [link](https://pan.baidu.com/s/178VwIYkR_ReV-nv2LAy74w), code: n7g9 |
 | 2017/03/03 09:20:13 |              | [link](https://pan.baidu.com/s/1xWrhXRpKw-F7H63V-Y_plQ), code: y0wy |
@@ -35,6 +35,7 @@ To investigate the persistent autonomy of mobile robot, I collected a dataset wi
 | 2017/03/09 11:25:40 |              | [link](https://pan.baidu.com/s/1xhSjaI7On8n1aeP2fUCXGA), code: k3pe |
 | 2017/03/09 15:06:14 |              | [link](https://pan.baidu.com/s/1u9DJ4og8yhW3oL6DqArNAA), code: 8ksj |
 | 2017/03/09 16:31:34 |              | [link](https://pan.baidu.com/s/1-7HT9LN6qrYIN6HfCJYkgQ), code: lmj8 |
+{: .text-center}
 
 ## More information
 I designed the sensory platform of the robot, along with firmware for collecting data (sensors driving, synchronization and storage). The robot was driven manually on the same route over 1km in our campus at different time to collect data. 21 sessions of sensory data were collected in spring as training set, while 3 in autumn and 1 in winter as test set. There are some research works conducted based on this data set, such as vision-based localization[1], laser-aid visual inertial localization[3], laser mapping[4] and global localization [5][6], and traversable area segmentation[2].
