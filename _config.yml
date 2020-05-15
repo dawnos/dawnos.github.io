@@ -22,6 +22,11 @@ title: Li Tang's Site
 email: litang.cv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is Li Tang's site.
+aboutme: >-
+  I am a PhD candidate at ZJU Robotics Lab (ZJURL), Zhejiang University since 2015.
+  My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
+  <br/><br/>
+  I am now a visitor in Autonomous Systems Lab (ASL), ETH Zurich (since Sept. 2019), and I visited UTS Centre for Autonomous Systems (CAS) from Oct. 2017 to Jan. 2018.
 baseurl: ""
 url: "tangli.site"
 twitter_username: ""
@@ -46,17 +51,18 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .vscode
 
 include:
   - "_pages"
@@ -73,10 +79,12 @@ defaults:
       type: projects
     values:
       tags: academic
-      sidebar:
-        nav: "academic"
-      author_profile: true
-      author: Li Tang
+      previous: nil
+      next: nil
+      # sidebar:
+        # nav: "academic"
+      # author_profile: true
+      # author: Li Tang
 
 
 search: true

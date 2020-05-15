@@ -2,6 +2,8 @@
 layout: single
 title:  "Amazon Picking Challenge"
 date: 2014-09-01 21:00:00 +0800
+header:
+  teaser: /assets/images/apc.jpg
 ---
 
 Cooperated with UTS (University of Technology Sydney) to participate in Amazon Picking Challenge (APC) on ICRA2015

@@ -6,7 +6,7 @@
         {
             "label": "Run server",
             "type": "shell",
-            "command": "bundle exec jekyll serve --watch --trace",
+            "command": "bundle exec jekyll serve --force_polling --host $(ifconfig en0 | grep 'inet[^6]' | sed 's/^.*inet//' | sed 's/netmask.*$//')",
             // "command": "bundle exec jekyll build --watch",
             "problemMatcher": []
         }

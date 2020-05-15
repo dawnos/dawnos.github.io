@@ -1,5 +1,6 @@
 ---
 layout: single
+# classes: wide
 sidebar:
   nav: "academic"
 author_profile: true
@@ -9,23 +10,17 @@ permalink: /academic/
 
 {{ "# About Me" | markdownify }}
 
-{{"
-I am a PhD candidate at ZJU Robotics Lab (ZJURL), Zhejiang University since 2015.
-My research interest is focused on visual localization. Besides, I am interested in everything in robotics.
-
-I am now a visitor in Autonomous Systems Lab (ASL), ETH Zurich (since Sept. 2019), and I visited UTS Centre for Autonomous Systems (CAS) from Oct. 2017 to Jan. 2018.
-"  | markdownify }}
+{{ site.aboutme | markdownify }}
 
 <hr>
 
 {{ "# Publications" | markdownify }}
 {% include publication-list.html show_less=true %}
-{{ "[**Find More Here...**](/publications/)" | markdownify }}
+{{ "[**Find more here...**](/publications/)" | markdownify }}
 
 <hr>
 
 {{ "# Projects" | markdownify }}
-{{ "(Updating. Hopefully finished before May 16.)" | markdownify }}
 <div class="entries-academic-project"> 
 {% assign projects = site.projects | where: "tags", "academic" %}
 {% include project-list.html entries=projects sort_by="date" sort_order="reverse" %}
